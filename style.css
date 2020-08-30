@@ -90,6 +90,30 @@ ul > li {
     padding: 2px;
 }
 
+@media (max-width: 650px) {
+    #form {
+        flex-direction: column;
+        height: 9rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #form > p {
+        margin: 0;
+    }
+
+    #email {
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        height: 50px;
+        border: none;
+        font-size: 1.1em;
+        padding: 2px;
+    }
+
+}
+
 .title {
     text-transform: uppercase;
     margin-bottom: 4rem;
