@@ -37,6 +37,10 @@ body {
     box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
 }
 
+ul {
+    display: flex;
+}
+
 ul a {
     color: white;
     text-decoration: none;
@@ -46,14 +50,19 @@ ul a:hover {
     color: black;
 }
 
+ul > li {
+    list-style: none;
+}
+
 .nav-link {
     display: inline-block;
     margin-right: 2rem;
 }
 
 @media (max-width: 650px) {
-    .nav-link {
-      display: block;
+    ul {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -78,6 +87,7 @@ ul a:hover {
     height: 50px;
     border: none;
     font-size: 1.1em;
+    padding: 2px;
 }
 
 .title {
