@@ -9,10 +9,17 @@ body {
     text-align: center;
 }
 
-#header {
+@media (max-width: 650px) {
+    .container {
+        width: 98%;
+    }
+}
+
+/* begin header style */
+.header {
     position: fixed;
     top: 0;
-    min-height: 10rem;
+    min-height: 6rem;
     width: 80%;
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
@@ -30,43 +37,45 @@ body {
     color: white;
 }
 
-#header-img {
+.header__logo {
     margin-left: 2rem;
     -webkit-box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
     box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
 }
 
-ul {
+.header__menu {
     display: flex;
 }
 
-ul a {
+.header__nav-link {
     color: white;
     text-decoration: none;
-}
-
-ul a:hover {
-    color: black;
-}
-
-ul > li {
-    list-style: none;
-}
-
-.nav-link {
     display: inline-block;
     margin-right: 2rem;
 }
 
+.header__nav-link:hover {
+    color: black;
+}
+
+.header__menu > li {
+    list-style: none;
+}
+
 @media (max-width: 650px) {
-    ul {
+    .header {
+        width: 98%;
+    }
+    .header__menu {
         display: flex;
         flex-direction: column;
     }
 }
+/* end header style */
 
-#form {
+/* begin form style */
+.form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,77 +89,83 @@ ul > li {
     font-size: 1.2em;
 }
 
-#email {
+.form__email {
     background-color: white;
     border-radius: 10px;
     width: 40%;
-    height: 50px;
+    height: 40px;
     border: none;
     font-size: 1.1em;
     padding: 2px;
 }
 
-@media (max-width: 650px) {
-    #form {
+@media (max-width: 940px) {
+    .form {
         flex-direction: column;
-        height: 9rem;
+        height: 7rem;
         align-items: center;
         justify-content: space-between;
     }
 
-    #form > p {
+    .form > p {
         margin: 0;
     }
 
-    #email {
-        background-color: white;
-        border-radius: 10px;
+    .form__email {
         width: 80%;
-        height: 50px;
-        border: none;
-        font-size: 1.1em;
-        padding: 2px;
+        height: 30px;
+        padding: 5px;
     }
+    
+}
+/* end form style */
 
+/* begin product style */
+.product-view {
+    margin-bottom: 4rem;
 }
 
-.title {
+.product-view__title {
     text-transform: uppercase;
-    margin-bottom: 4rem;
     font-size: 4em;
     color: #002D62;
 }
+/* end product style */
 
-#product-view {
+/* begin feature style */
+.feature__group {
     margin-top: 4rem;
     margin-bottom: 4rem;
     display: flex;
     justify-content: center;
   }
 
-.feature--div {
+.feature__group {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.feature--icon {
+.feature__icon {
     width: 50px;
     margin-right: 1rem;
 }
+/* end feature style */
 
-#pricing {
+/* begin pricing style */
+.pricing {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.pricing-table {
+.pricing__table {
     padding-bottom: 1rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
     width: 300px;
     background-color: #0093E9;
@@ -162,7 +177,7 @@ ul > li {
     color: white;
 }
 
-.pricing-table--title {
+.pricing__title {
     width: 100%;
     font-size: 1.5em;
     padding: .5rem 0;
@@ -173,13 +188,13 @@ ul > li {
     border: none;
 }
 
-.price {
+.pricing__price {
     font-size: 2em;
     font-weight: bold;
     margin: 1rem;
 }
 
-.pricing-table > ol {
+.pricing__table > ol {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -187,26 +202,27 @@ ul > li {
     padding : 1rem;
 }
 
-.pricing-table > ol > li {
+.pricing__table > ol > li {
     padding : .5rem;
 }
 
 @media (max-width: 800px) {
-    #pricing {
+    .pricing {
       flex-direction: column;
     }
-    .pricing-table {
+
+    .pricing__table {
       max-width: 300px;
       width: 100%;
       margin: 0 auto;
       margin-bottom: 10px;
     }
 }
+/* end pricing style */
 
-.pricing--btn{
+.btn {
     display:inline-block;
     padding:0.35em 1.2em;
-    
     border-radius: 8px;
     box-sizing: border-box;
     text-decoration:none;
@@ -219,15 +235,17 @@ ul > li {
     text-transform: uppercase;
 }
 
-.pricing--btn:hover{
+/* begin general button style */
+.btn:hover{
     color: white;
     background-color:#002D62;
 }
 
-.bouncy{
+.btn--bouncy{
     animation:bouncy 5s infinite linear;
     position:relative;
 }
+
 @keyframes bouncy {
     0%{top:0em}
     40%{top:0em}
@@ -237,3 +255,4 @@ ul > li {
     50%{top:0em}
     100%{top:0em;}
 }
+/* end general button style */

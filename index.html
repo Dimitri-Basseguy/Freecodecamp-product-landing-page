@@ -9,72 +9,71 @@
 </head>
 <body>
     <div class="container">
-        <header id="header">
-            <img id="header-img" src="logo.png" alt="">
+        <header id="header" class="header">
+            <img id="header-img" src="logo.png" class="header__logo" alt="">
             <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#product-view">Product View</a></li>
-                    <li><a class="nav-link" href="#feature">Features</a></li>
-                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <ul class="header__menu">
+                    <li><a class="header__nav-link" href="#product-view">Product View</a></li>
+                    <li><a class="header__nav-link" href="#feature">Features</a></li>
+                    <li><a class="header__nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <form id="form" action="">
+            <form id="form" action="" class="form">
                 <p>Register for more news :</p>
-                <input id="email" type="email" name="email" placeholder="enter your email adresse here">
-                <input id="submit" type="submit" value="Get Started" class="pricing--btn" />
+                <input class="form__email" id="email" type="email" name="email" placeholder="enter your email adresse here">
+                <input id="submit" type="submit" value="Get Started" class="btn form__btn" />
             </form>
-            <h1 class="title">The Predator Drone</h1>
-            <section id="product-view">
+            <section id="product-view" class="product-view">
+                <h1 class="product-view__title">The Predator Drone</h1>
                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kcdeBMH5Kx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
-
-            <section id="feature">
-                <div class="feature--div">
-                    <img class="feature--icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
+            <section id="feature" class="feature">
+                <div class="feature__group">
+                    <img class="feature__icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet animi voluptate natus. Sapiente, ipsam inventore? Aspernatur nulla, asperiores sequi eius vel similique excepturi iusto dicta eveniet, magnam deserunt illo!</p>
                 </div>
-                <div class="feature--div">
-                    <img class="feature--icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
+                <div class="feature__group">
+                    <img class="feature__icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet animi voluptate natus. Sapiente, ipsam inventore? Aspernatur nulla, asperiores sequi eius vel similique excepturi iusto dicta eveniet, magnam deserunt illo!</p>
                 </div>
-                <div class="feature--div">
-                    <img class="feature--icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
+                <div class="feature__group">
+                    <img class="feature__icon" src="https://image.flaticon.com/icons/svg/890/890163.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet animi voluptate natus. Sapiente, ipsam inventore? Aspernatur nulla, asperiores sequi eius vel similique excepturi iusto dicta eveniet, magnam deserunt illo!</p>
                 </div>
             </section>
 
-            <section id="pricing">
-                <div class="pricing-table">
-                    <div class="pricing-table--title">Drone Type I</div>
-                    <p class="price">100 €</p>
+            <section id="pricing" class="pricing">
+                <div class="pricing__table">
+                    <div class="pricing__title">Drone Type I</div>
+                    <p class="pricing__price">100 €</p>
                     <ol>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                     </ol>
-                    <button class="pricing--btn bouncy">Take my money !</button>
+                    <button class="btn btn--bouncy">Take my money !</button>
                 </div>
-                <div class="pricing-table">
-                    <div class="pricing-table--title">Drone Type II</div>
-                    <p class="price">200 €</p>
+                <div class="pricing__table">
+                    <div class="pricing__title">Drone Type II</div>
+                    <p class="pricing__price">200 €</p>
                     <ol>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                     </ol>
-                    <button class="pricing--btn bouncy">Take my money !</button>
+                    <button class="btn btn--bouncy">Take my money !</button>
                 </div>
-                <div class="pricing-table">
-                    <div class="pricing-table--title">Drone Type II</div>
-                    <p class="price">300 €</p>
+                <div class="pricing__table">
+                    <div class="pricing__title">Drone Type III</div>
+                    <p class="pricing__price">300 €</p>
                     <ol>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                     </ol>
-                    <button class="pricing--btn bouncy">Take my money !</button>
+                    <button class="btn btn--bouncy">Take my money !</button>
                 </div>
             </section>
         </main>
